@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  background-color: #1f1e21;
+  font-family: gilroy;
+}
+
+.page1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  position: relative;
+  padding: 1vw 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > h3 {
+  font-size: 1.5vw;
+  color: #bd0a0a;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+nav > h3:hover {
+  color: #fff;
+}
+
+nav > i {
+  font-size: 2vw;
+  color: #fff;
+}
+
+.page1-main {
+  position: relative;
+  height: 91.8vh;
+  width: 100%;
+  display: flex;
+}
+
+.page1-main-left {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4vw;
+}
+
+.page1-main-left > h1 {
+  font-size: 5vw;
+  font-weight: 900;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.float {
+  color: #bd0a0a;
+  background-position: 0 0;
+  color: transparent;
+  background-image: url("https://www.just-a-web-developer.com/wp-content/uploads/rotation-red.jpg");
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  animation: back 8s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.hardik-dets {
+  position: relative;
+  padding: 0.2vw;
+  background-color: #bd0a0a;
+  width: 65%;
+}
+
+.hardik-dets > h3 {
+  font-weight: 300;
+  font-size: 1.5vw;
+  position: relative;
+}
+
+.hardik-dets > h3::after {
+  background-image: url("https://www.just-a-web-developer.com/wp-content/uploads/my-hobby.svg");
+  background-size: 188px 61px;
+  display: inline-block;
+  width: 14vw;
+  height: 4vw;
+  content: "";
+  position: absolute;
+  right: -8vw;
+  margin-top: 2.5vw;
+}
+
+.page1-main-right {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.circle {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #262427;
+  border-radius: 50%;
+  margin-top: 4vw;
+}
