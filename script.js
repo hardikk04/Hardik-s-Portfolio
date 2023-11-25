@@ -109,4 +109,16 @@ function gsapAnimations() {
       //   markers: true,
     },
   });
+
+  t1.to(".page3,.page4,.page5", {
+    backgroundColor: "#1f1e21",
+    scrollTrigger: {
+      trigger: ".page5",
+      scroller: "body",
+      start: "top 30%",
+      end: "top 10%",
+      scrub: 1,
+      //   markers: true,
+    },
+  });
 }
