@@ -38,6 +38,15 @@ function gsapAnimations() {
     ease: "power3.inOut",
   });
 
+  t1.from("nav", {
+    opacity: 0,
+  });
+
+  t1.from(".page1-main-left", {
+    opacity: 0,
+    y: 50,
+  });
+
   t1.to(".page2", {
     backgroundColor: "#bd0a0a",
     scrollTrigger: {
