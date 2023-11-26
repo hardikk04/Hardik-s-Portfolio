@@ -68,7 +68,6 @@ let myInterval = setInterval(() => {
     gsapAnimations();
     clearInterval(myInterval);
   }
-  console.log(randomNumber);
 }, 250);
 
 const t1 = gsap.timeline();
@@ -188,4 +187,47 @@ function gsapAnimations() {
       // markers: true,
     },
   });
+
+  t1.from(".page6", {
+    opacity: 0.5,
+    onComplete: experience,
+    scrollTrigger: {
+      trigger: ".page6",
+      scroller: "body",
+      start: "top 80%",
+      end: "top 70%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  let experienceH1 = document.querySelector(".experience");
+  let websiteH1 = document.querySelector(".website");
+  let sleepH1 = document.querySelector(".sleep");
+  function experience() {
+    let experienceCount = 0;
+    let websiteCount = 0;
+    let sleepCount = 0;
+    let Interval1 = setInterval(() => {
+      experienceCount++;
+      experienceH1.textContent = experienceCount;
+      if (experienceCount === 3) {
+        clearInterval(Interval1);
+      }
+    }, 100);
+    let Interval2 = setInterval(() => {
+      websiteCount++;
+      websiteH1.textContent = websiteCount;
+      if (websiteCount === 20) {
+        clearInterval(Interval2);
+      }
+    }, 70);
+    let Interval3 = setInterval(() => {
+      sleepCount++;
+      sleepH1.textContent = sleepCount;
+      if (sleepCount === 7) {
+        clearInterval(Interval3);
+      }
+    }, 90);
+  }
 }
