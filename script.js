@@ -17,6 +17,48 @@ function lenisJs() {
 }
 lenisJs();
 
+function swiperJs() {
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    spaceBetween: 50,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+swiperJs();
+
+let videos = document.querySelectorAll(".swiper-slide>a>video");
+
+videos.forEach((elem) => {
+  elem.addEventListener("mouseenter", () => {
+    elem.play();
+    elem.playbackRate = 2.0;
+    elem.setAttribute("controls", "");
+  });
+
+  elem.addEventListener("mouseleave", () => {
+    elem.pause();
+    elem.removeAttribute("controls");
+  });
+});
+
 let myInterval = setInterval(() => {
   randomNumber = randomNumber + Math.floor(Math.random() * 22);
   if (randomNumber < 85) {
@@ -119,6 +161,31 @@ function gsapAnimations() {
       end: "top 10%",
       scrub: 1,
       //   markers: true,
+    },
+  });
+
+  t1.from(".page5>h1,.page5>p", {
+    opacity: 0,
+    y: 50,
+    scrollTrigger: {
+      trigger: ".page5",
+      scroller: "body",
+      start: "top 70%",
+      end: "top 20",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  t1.to(".page5>h1>span", {
+    color: "#bd0a0a",
+    scrollTrigger: {
+      trigger: ".page5",
+      scroller: "body",
+      start: "top 50%",
+      end: "top 20",
+      scrub: 1,
+      // markers: true,
     },
   });
 }
