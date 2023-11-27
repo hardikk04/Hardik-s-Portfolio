@@ -858,8 +858,8 @@ footer > p > i {
   }
 
   .hardik-dets > h3::after {
-    right: -10vw;
-    background-size: 115px 40px;
+    right: 4vw;
+    background-size: 110px 40px;
   }
 
   .page3-right p {
