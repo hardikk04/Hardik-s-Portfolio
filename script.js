@@ -15,7 +15,7 @@ function lenisJs() {
 
   requestAnimationFrame(raf);
 }
-// lenisJs();
+lenisJs();
 
 function swiperJs() {
   var swiper = new Swiper(".mySwiper", {
