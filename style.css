@@ -86,7 +86,6 @@ body::-webkit-scrollbar-track {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: #bd0a0a;
 }
 
 nav {
