@@ -613,3 +613,106 @@ footer > p > i {
     font-size: 1vw;
   }
 }
+
+@media (min-width: 768px) {
+  .hardik-dets > h3::after {
+    width: 24vw;
+    height: 10vw;
+    right: -8vw;
+    background-size: 188px 45px;
+  }
+
+  nav > a {
+    font-size: 1.5vw;
+    border-radius: 1vw;
+  }
+
+  nav > h3 {
+    font-size: 2.5vw;
+  }
+
+  .page1-main-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page1-main-left > h1 {
+    font-size: 6vw;
+    line-height: 1;
+    margin-bottom: 1vw;
+  }
+
+  .hardik-dets > h3 {
+    font-size: 1.8vw;
+  }
+
+  .page2 > h1 {
+    font-size: 12vw;
+    width: 85%;
+  }
+
+  .page3-right p {
+    font-size: 1.7vw;
+  }
+
+  .page4 > h6 {
+    font-size: 2vw;
+  }
+
+  .page4-tools > h1 {
+    font-size: 2.2vw;
+  }
+
+  .libraries > h1 {
+    font-size: 2.2vw;
+  }
+
+  .libraries > a {
+    font-size: 1.3vw;
+  }
+
+  .page5 {
+    height: 85vh;
+  }
+
+  .page5 > h1 {
+    font-size: 5vw;
+  }
+
+  .page5 > p {
+    font-size: 1.8vw;
+    width: 50%;
+  }
+
+  .swiper-3d .swiper-cube-shadow,
+  .swiper-3d .swiper-slide {
+    width: 280px;
+  }
+
+  .page6-elem > h3 {
+    font-size: 2.2vw;
+  }
+
+  .page6-elem > h1 {
+    font-size: 10vw;
+  }
+
+  .footer-icons > a {
+    padding: 1vw;
+    font-size: 2.2vw;
+  }
+
+  footer {
+    height: 15vh;
+  }
+
+  footer > p {
+    font-size: 1.6vw;
+  }
+
+  .ri-heart-fill {
+    font-size: 1.8vw;
+    margin-left: 0.3vw;
+  }
+}
