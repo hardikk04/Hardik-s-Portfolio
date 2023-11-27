@@ -232,7 +232,11 @@ function gsapAnimations() {
   }
 }
 
-function sheryJs() {
+window.addEventListener("beforeunload", function () {
+  window.scrollTo(0, 0);
+});
+
+if (window.matchMedia("(min-width: 1600px)").matches) {
   Shery.mouseFollower({
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
@@ -243,12 +247,6 @@ function sheryJs() {
     duration: 1,
   });
 }
-
-sheryJs();
-
-window.addEventListener("beforeunload", function () {
-  window.scrollTo(0, 0);
-});
 
 var x = window.matchMedia("(max-width: 768px)");
 myFunction(x); // Call listener function at run time
