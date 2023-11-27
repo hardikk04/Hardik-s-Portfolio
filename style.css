@@ -718,7 +718,7 @@ footer > p > i {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   nav {
     padding-top: 2vw;
   }
