@@ -836,6 +836,10 @@ footer > p > i {
 }
 
 @media (max-width: 600px) {
+  .loder > h1 {
+    bottom: 15%;
+  }
+
   .loder > img {
     height: 50vh;
     width: 50vh;
