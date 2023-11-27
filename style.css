@@ -43,6 +43,7 @@ body::-webkit-scrollbar-track {
   width: 100%;
   background-color: #1f1e21;
   /* font-family: gilroy; */
+  overflow-x: hidden;
 }
 
 .loder {
@@ -574,7 +575,7 @@ footer > p > i {
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 1200px) {
   .hardik-dets > h3::after {
     width: 20vw;
     height: 8vw;
@@ -614,7 +615,7 @@ footer > p > i {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 992px) {
   .hardik-dets > h3::after {
     width: 24vw;
     height: 10vw;
@@ -714,5 +715,207 @@ footer > p > i {
   .ri-heart-fill {
     font-size: 1.8vw;
     margin-left: 0.3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding-top: 2vw;
+  }
+
+  .page1-main {
+    flex-direction: column-reverse;
+    margin-top: 4vw;
+  }
+
+  .page1-main-left {
+    height: 45%;
+    width: 100%;
+    justify-content: start;
+    margin-left: 6vw;
+    padding-top: 6vw;
+  }
+
+  .page1-main-left > h1 {
+    font-size: 8vw;
+  }
+
+  .hardik-dets {
+    margin-top: 1vw;
+  }
+
+  .hardik-dets > h3 {
+    font-size: 2.8vw;
+  }
+
+  .hardik-dets > h3::after {
+    right: -9vw;
+    width: 30vw;
+    background-size: 188px 55px;
+    margin-top: 5vw;
+  }
+
+  .page1-circle {
+    height: 65vh;
+    width: 65vh;
+  }
+
+  .page1-main-right {
+    width: 100%;
+  }
+
+  .page3 {
+    flex-direction: column;
+  }
+
+  .page3-left {
+    height: 60%;
+    width: 100%;
+  }
+
+  .page3-right {
+    height: 40%;
+    width: 100%;
+    margin-top: 2vw;
+  }
+
+  .page3-right p {
+    font-size: 2vw;
+  }
+
+  .page4-tools > h1 {
+    font-size: 2.5vw;
+  }
+
+  .page4-tools > i {
+    font-size: 4vw;
+  }
+
+  .page4-tools > img {
+    height: 4vw;
+  }
+
+  .libraries {
+    flex-wrap: wrap;
+  }
+
+  .libraries > h1 {
+    font-size: 2.5vw;
+  }
+
+  .libraries > a {
+    font-size: 1.5vw;
+  }
+
+  .page5 {
+    height: 85vh;
+    padding-top: 8vw;
+  }
+
+  .page5 > h1 {
+    font-size: 7vw;
+  }
+
+  .page5 > p {
+    font-size: 2vw;
+  }
+
+  .page6 {
+    height: 25vh;
+  }
+
+  .swiper-3d .swiper-cube-shadow,
+  .swiper-3d .swiper-slide {
+    width: 300px !important;
+  }
+
+  .swiper-slide {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .loder > img {
+    height: 50vh;
+    width: 50vh;
+  }
+
+  nav > h3 {
+    font-size: 3.5vw;
+  }
+
+  nav > a {
+    font-size: 3vw;
+  }
+
+  .page1-main {
+    margin-top: 12vw;
+  }
+
+  .hardik-dets {
+    margin-top: 2vw;
+  }
+
+  .hardik-dets > h3::after {
+    right: -10vw;
+    background-size: 115px 40px;
+  }
+
+  .page3-right p {
+    font-size: 2.5vw;
+  }
+
+  .page4 > h6 {
+    font-size: 3vw;
+  }
+
+  .page4-tools > h1 {
+    font-size: 3vw;
+  }
+
+  .page4-tools > i {
+    font-size: 5vw;
+  }
+
+  .page4-tools > img {
+    height: 5vw;
+  }
+
+  .libraries > h1 {
+    font-size: 3vw;
+  }
+
+  .libraries > a {
+    font-size: 2vw;
+    margin-left: 4vw;
+  }
+
+  .page5 {
+    height: 60vh;
+  }
+
+  .page6-elem > h3 {
+    font-size: 2.5vw;
+  }
+
+  .page6-elem > h1 {
+    font-size: 14vw;
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  .footer-icons > a {
+    padding: 1.5vw;
+    font-size: 3.2vw;
+  }
+
+  footer > p {
+    font-size: 2.6vw;
+  }
+
+  .ri-heart-fill {
+    font-size: 3.5vw;
   }
 }

@@ -288,3 +288,67 @@ sheryJs();
 window.addEventListener("beforeunload", function () {
   window.scrollTo(0, 0);
 });
+
+var x = window.matchMedia("(max-width: 768px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction);
+
+function myFunction(x) {
+  if (x.matches) {
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      loop: true,
+      // centeredSlides: true,
+      slidesPerView: 3,
+      spaceBetween: 10,
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+}
+
+var x = window.matchMedia("(max-width: 600px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction);
+
+function myFunction(x) {
+  if (x.matches) {
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: 6,
+      spaceBetween: 10,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+}
