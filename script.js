@@ -50,12 +50,10 @@ videos.forEach((elem) => {
   elem.addEventListener("mouseenter", () => {
     elem.play();
     elem.playbackRate = 2.0;
-    elem.setAttribute("controls", "");
   });
 
   elem.addEventListener("mouseleave", () => {
     elem.pause();
-    elem.removeAttribute("controls");
   });
 });
 
