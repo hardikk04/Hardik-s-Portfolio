@@ -8,7 +8,6 @@ body,
 html {
   width: 100%;
   height: 100%;
-  /* overflow-y: auto; */
 }
 
 body::-webkit-scrollbar {
@@ -58,6 +57,7 @@ body::-webkit-scrollbar-track {
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  overflow: hidden;
 }
 
 .loder > img {
@@ -100,7 +100,7 @@ nav {
 
 nav > h3 {
   font-size: 1.5vw;
-  color: #bd0a0a;
+  color: #92a4b1;
   transition: all ease 0.5s;
   cursor: pointer;
   letter-spacing: 2px;
@@ -152,13 +152,10 @@ nav > a {
 }
 
 .float {
-  color: #bd0a0a;
+  color: #92a4b1;
   background-position: 0 0;
-  color: transparent;
-  background-image: url("https://www.just-a-web-developer.com/wp-content/uploads/rotation-red.jpg");
-  background-position: 0 0;
-  -webkit-background-clip: text;
-  animation: back 8s linear infinite;
+  /* color: transparent; */
+  /* background-image: url("https://www.just-a-web-developer.com/wp-content/uploads/rotation-red.jpg"); */
 }
 @keyframes back {
   100% {
@@ -169,7 +166,7 @@ nav > a {
 .hardik-dets {
   position: relative;
   padding: 0.2vw;
-  background-color: #bd0a0a;
+  background-color: #92a4b1;
   width: 83%;
 }
 
@@ -220,7 +217,7 @@ nav > a {
 }
 
 .page1-circle > img:hover {
-  filter: drop-shadow(10px 10px 20px #bd0a0a);
+  filter: drop-shadow(10px 10px 20px #92a4b1);
 }
 
 .page2 {
@@ -250,7 +247,7 @@ nav > a {
   justify-content: space-between;
   /* align-items: center; */
   padding: 6vw 4vw;
-  background-color: #bd0a0a;
+  /* background-color: #92a4b1; */
 }
 
 .page3-left {
@@ -345,7 +342,7 @@ nav > a {
   position: relative;
   height: 30vh;
   width: 100%;
-  background-color: #bd0a0a;
+  /* background-color: #92a4b1; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -377,6 +374,7 @@ nav > a {
 
 .page4-tools > i {
   font-size: 3vw;
+  color: #92a4b1;
 }
 
 .page4-tools > img {
@@ -392,7 +390,7 @@ nav > a {
 
 .libraries a {
   text-decoration: none;
-  color: #000;
+  color: #92a4b1;
   margin-top: 0.5vw;
   transition: all ease 0.5s;
 }
@@ -415,7 +413,7 @@ nav > a {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: #bd0a0a;
+  /* background-color: #92a4b1; */
   padding: 4vw;
 }
 
@@ -470,7 +468,7 @@ nav > a {
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  color: red;
+  color: #92a4b1;
 }
 
 .swiper-button-prev:after {
@@ -483,7 +481,7 @@ nav > a {
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer;
-  background-color: #bd0a0a;
+  background-color: #92a4b1;
 }
 
 .page6 {
@@ -512,7 +510,7 @@ nav > a {
   font-size: 6vw;
   color: transparent;
   font-family: black;
-  -webkit-text-stroke: 2px #bd0a0a;
+  -webkit-text-stroke: 2px #92a4b1;
 }
 
 footer {
@@ -534,7 +532,7 @@ footer {
 .footer-icons > a {
   text-decoration: none;
   color: #fff;
-  background-color: #bd0a0a71;
+  background-color: #92a4b1;
   padding: 0.5vw;
   font-size: 1.2vw;
   border-radius: 50%;
@@ -564,7 +562,7 @@ footer > p {
 }
 
 footer > p > i {
-  color: #bd0a0a;
+  color: #92a4b1;
   font-size: 1.3vw;
 }
 

@@ -1,5 +1,6 @@
 let randomNumber = 0;
 let counter = document.querySelector(".loder>h1");
+const html = document.querySelector("html");
 
 function lenisJs() {
   const lenis = new Lenis({
@@ -86,17 +87,17 @@ function gsapAnimations() {
     y: 50,
   });
 
-  t1.to(".page2", {
-    backgroundColor: "#bd0a0a",
-    scrollTrigger: {
-      scroller: "body",
-      trigger: ".page2",
-      start: "top 80%",
-      end: "top 50",
-      //   markers: true,
-      scrub: 1,
-    },
-  });
+  // t1.to(".page2", {
+  //   backgroundColor: "#92a4b1",
+  //   scrollTrigger: {
+  //     scroller: "body",
+  //     trigger: ".page2",
+  //     start: "top 80%",
+  //     end: "top 50",
+  //     //   markers: true,
+  //     scrub: 1,
+  //   },
+  // });
 
   let clutter = "";
 
@@ -149,17 +150,17 @@ function gsapAnimations() {
     },
   });
 
-  t1.to(".page3,.page4,.page5", {
-    backgroundColor: "#1f1e21",
-    scrollTrigger: {
-      trigger: ".page5",
-      scroller: "body",
-      start: "top 30%",
-      end: "top 10%",
-      scrub: 1,
-      //   markers: true,
-    },
-  });
+  // t1.to(".page3,.page4,.page5", {
+  //   backgroundColor: "#1f1e21",
+  //   scrollTrigger: {
+  //     trigger: ".page5",
+  //     scroller: "body",
+  //     start: "top 30%",
+  //     end: "top 10%",
+  //     scrub: 1,
+  //     //   markers: true,
+  //   },
+  // });
 
   t1.from(".page5>h1,.page5>p", {
     opacity: 0,
@@ -175,7 +176,7 @@ function gsapAnimations() {
   });
 
   t1.to(".page5>h1>span", {
-    color: "#bd0a0a",
+    color: "#92a4b1",
     scrollTrigger: {
       trigger: ".page5",
       scroller: "body",
@@ -209,21 +210,21 @@ function gsapAnimations() {
     let Interval1 = setInterval(() => {
       experienceCount++;
       experienceH1.textContent = experienceCount;
-      if (experienceCount === 3) {
+      if (experienceCount === 5) {
         clearInterval(Interval1);
       }
     }, 100);
     let Interval2 = setInterval(() => {
       websiteCount++;
       websiteH1.textContent = websiteCount;
-      if (websiteCount === 20) {
+      if (websiteCount === 40) {
         clearInterval(Interval2);
       }
     }, 70);
     let Interval3 = setInterval(() => {
       sleepCount++;
       sleepH1.textContent = sleepCount;
-      if (sleepCount === 7) {
+      if (sleepCount === 11) {
         clearInterval(Interval3);
       }
     }, 90);
@@ -308,4 +309,123 @@ function myFunction(x) {
       },
     });
   }
+}
+
+if (
+  !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  Shery.imageEffect(".page3-left-part1>img", {
+    style: 3,
+    // debug: true,
+    config: {
+      uFrequencyX: { value: 12, range: [0, 100] },
+      uFrequencyY: { value: 12, range: [0, 100] },
+      uFrequencyZ: { value: 10, range: [0, 100] },
+      geoVertex: { range: [1, 64], value: 32 },
+      zindex: { value: "9", range: [-9999999, 9999999] },
+      aspect: { value: 0.7225538487226582 },
+      ignoreShapeAspect: { value: true },
+      shapePosition: { value: { x: 0, y: 0 } },
+      shapeScale: { value: { x: 0.5, y: 0.5 } },
+      shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
+      shapeRadius: { value: 0.05, range: [0, 2] },
+      currentScroll: { value: 0 },
+      scrollLerp: { value: 0.07 },
+      gooey: { value: true },
+      infiniteGooey: { value: false },
+      growSize: { value: 4, range: [1, 15] },
+      durationOut: { value: 1, range: [0.1, 5] },
+      durationIn: { value: 1.5, range: [0.1, 5] },
+      displaceAmount: { value: 0.5 },
+      masker: { value: true },
+      maskVal: { value: 1.18, range: [1, 5] },
+      scrollType: { value: 0 },
+      noEffectGooey: { value: true },
+      onMouse: { value: 0 },
+      noise_speed: { value: 0.2, range: [0, 10] },
+      metaball: { value: 0.2, range: [0, 2] },
+      discard_threshold: { value: 0.5, range: [0, 1] },
+      antialias_threshold: { value: 0, range: [0, 0.1] },
+      noise_height: { value: 0.5, range: [0, 2] },
+      noise_scale: { value: 10, range: [0, 100] },
+      uColor: { value: false },
+      uSpeed: { value: 0.6, range: [0.1, 1], rangep: [1, 10] },
+      uAmplitude: { value: 1.5, range: [0, 5] },
+      uFrequency: { value: 3.5, range: [0, 10] },
+    },
+  });
+  Shery.imageEffect(".page3-left-part2-top>img", {
+    style: 3,
+    // debug: true,
+    config: {
+      uFrequencyX: { value: 12, range: [0, 100] },
+      uFrequencyY: { value: 12, range: [0, 100] },
+      uFrequencyZ: { value: 10, range: [0, 100] },
+      geoVertex: { range: [1, 64], value: 32 },
+      zindex: { value: "9", range: [-9999999, 9999999] },
+      aspect: { value: 1.4898222662133667 },
+      ignoreShapeAspect: { value: true },
+      shapePosition: { value: { x: 0, y: 0 } },
+      shapeScale: { value: { x: 0.5, y: 0.5 } },
+      shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
+      shapeRadius: { value: 0.05, range: [0, 2] },
+      currentScroll: { value: 0 },
+      scrollLerp: { value: 0.07 },
+      gooey: { value: false },
+      infiniteGooey: { value: false },
+      growSize: { value: 4, range: [1, 15] },
+      durationOut: { value: 1, range: [0.1, 5] },
+      durationIn: { value: 1.5, range: [0.1, 5] },
+      displaceAmount: { value: 0.5 },
+      masker: { value: true },
+      maskVal: { value: 1.12, range: [1, 5] },
+      scrollType: { value: 0 },
+      noEffectGooey: { value: true },
+      onMouse: { value: 0 },
+      noise_speed: { value: 0.2, range: [0, 10] },
+      metaball: { value: 0.2, range: [0, 2] },
+      discard_threshold: { value: 0.5, range: [0, 1] },
+      antialias_threshold: { value: 0.002, range: [0, 0.1] },
+      noise_height: { value: 0.5, range: [0, 2] },
+      noise_scale: { value: 10, range: [0, 100] },
+    },
+  });
+  Shery.imageEffect(".page3-left-part2-bottom>img", {
+    style: 3,
+    // debug: true,
+    config: {
+      uFrequencyX: { value: 12, range: [0, 100] },
+      uFrequencyY: { value: 12, range: [0, 100] },
+      uFrequencyZ: { value: 10, range: [0, 100] },
+      geoVertex: { range: [1, 64], value: 32 },
+      zindex: { value: "9", range: [-9999999, 9999999] },
+      aspect: { value: 1.4898222662133667 },
+      ignoreShapeAspect: { value: true },
+      shapePosition: { value: { x: 0, y: 0 } },
+      shapeScale: { value: { x: 0.5, y: 0.5 } },
+      shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
+      shapeRadius: { value: 0.05, range: [0, 2] },
+      currentScroll: { value: 0 },
+      scrollLerp: { value: 0.07 },
+      gooey: { value: false },
+      infiniteGooey: { value: false },
+      growSize: { value: 4, range: [1, 15] },
+      durationOut: { value: 1, range: [0.1, 5] },
+      durationIn: { value: 1.5, range: [0.1, 5] },
+      displaceAmount: { value: 0.5 },
+      masker: { value: true },
+      maskVal: { value: 1.12, range: [1, 5] },
+      scrollType: { value: 0 },
+      noEffectGooey: { value: true },
+      onMouse: { value: 0 },
+      noise_speed: { value: 0.2, range: [0, 10] },
+      metaball: { value: 0.2, range: [0, 2] },
+      discard_threshold: { value: 0.5, range: [0, 1] },
+      antialias_threshold: { value: 0.002, range: [0, 0.1] },
+      noise_height: { value: 0.5, range: [0, 2] },
+      noise_scale: { value: 10, range: [0, 100] },
+    },
+  });
 }
