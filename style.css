@@ -194,7 +194,7 @@ nav > a {
   position: relative;
   height: 100%;
   width: 50%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .page1-circle {
@@ -214,6 +214,8 @@ nav > a {
   width: 100%;
   object-fit: cover;
   transition: all ease 0.5s;
+  position: relative;
+  top: -7%;
 }
 
 .page1-circle > img:hover {

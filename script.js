@@ -224,7 +224,7 @@ function gsapAnimations() {
     let Interval3 = setInterval(() => {
       sleepCount++;
       sleepH1.textContent = sleepCount;
-      if (sleepCount === 11) {
+      if (sleepCount === 22) {
         clearInterval(Interval3);
       }
     }, 90);
