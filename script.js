@@ -210,14 +210,14 @@ function gsapAnimations() {
     let Interval1 = setInterval(() => {
       experienceCount++;
       experienceH1.textContent = experienceCount;
-      if (experienceCount === 5) {
+      if (experienceCount === 6) {
         clearInterval(Interval1);
       }
     }, 100);
     let Interval2 = setInterval(() => {
       websiteCount++;
       websiteH1.textContent = websiteCount;
-      if (websiteCount === 40) {
+      if (websiteCount === 45) {
         clearInterval(Interval2);
       }
     }, 70);
