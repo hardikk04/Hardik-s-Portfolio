@@ -69,6 +69,23 @@ let myInterval = setInterval(() => {
   }
 }, 250);
 
+const specificClutterAnimation = (element) => {
+  const htmlTag = document.querySelector(element);
+  let clutter = "";
+  htmlTag.textContent.split("").forEach((words, index) => {
+    console.log(words, index);
+    if (index > 8) {
+      clutter += `<span class='float'>${words}</span>`;
+      // console.log("h2");
+    } else {
+      clutter += `<span>${words}</span>`;
+    }
+  });
+  htmlTag.innerHTML = clutter;
+};
+
+specificClutterAnimation(".overflow-hidden-overlay>h1");
+
 const t1 = gsap.timeline();
 
 function gsapAnimations() {
@@ -82,9 +99,18 @@ function gsapAnimations() {
     opacity: 0,
   });
 
-  t1.from(".page1-main-left", {
+  t1.from(".overflow-hidden-overlay>h1>span", {
     opacity: 0,
-    y: 50,
+    y: 100,
+    stagger: {
+      amount: "1",
+      from: "center",
+    },
+  });
+
+  t1.from(".hardik-dets", {
+    opacity: 0,
+    y: 40,
   });
 
   // t1.to(".page2", {
