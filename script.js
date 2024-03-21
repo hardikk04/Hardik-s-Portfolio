@@ -73,7 +73,6 @@ const specificClutterAnimation = (element) => {
   const htmlTag = document.querySelector(element);
   let clutter = "";
   htmlTag.textContent.split("").forEach((words, index) => {
-    console.log(words, index);
     if (index > 8) {
       clutter += `<span class='float'>${words}</span>`;
       // console.log("h2");
