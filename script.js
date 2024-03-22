@@ -1,3 +1,5 @@
+
+
 let randomNumber = 0;
 let counter = document.querySelector(".loder>h1");
 const html = document.querySelector("html");
@@ -272,70 +274,6 @@ if (window.matchMedia("(min-width: 1600px)").matches) {
   });
 }
 
-var x = window.matchMedia("(max-width: 768px)");
-myFunction(x); // Call listener function at run time
-x.addListener(myFunction);
-
-function myFunction(x) {
-  if (x.matches) {
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      loop: true,
-      // centeredSlides: true,
-      slidesPerView: 3,
-      spaceBetween: 10,
-      coverflowEffect: {
-        rotate: 30,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  }
-}
-
-var x = window.matchMedia("(max-width: 600px)");
-myFunction(x); // Call listener function at run time
-x.addListener(myFunction);
-
-function myFunction(x) {
-  if (x.matches) {
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      loop: true,
-      centeredSlides: true,
-      slidesPerView: 6,
-      spaceBetween: 10,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  }
-}
-
 if (
   !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
@@ -454,3 +392,4 @@ if (
     },
   });
 }
+

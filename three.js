@@ -14,7 +14,9 @@ fontTextureText.colorSpace = THREE.SRGBColorSpace;
 fontTextureTorus.colorSpace = THREE.SRGBColorSpace;
 
 // Materials
-const materialText = new THREE.MeshMatcapMaterial({ matcap: fontTextureText });
+const materialText = new THREE.MeshMatcapMaterial({
+  matcap: fontTextureText,
+});
 const materialTorus = new THREE.MeshMatcapMaterial({
   matcap: fontTextureTorus,
 });
