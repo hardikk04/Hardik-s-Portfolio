@@ -1,5 +1,3 @@
-
-
 let randomNumber = 0;
 let counter = document.querySelector(".loder>h1");
 const html = document.querySelector("html");
@@ -392,4 +390,3 @@ if (
     },
   });
 }
-

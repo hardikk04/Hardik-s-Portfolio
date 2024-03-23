@@ -8,8 +8,8 @@ const scene = new THREE.Scene();
 
 // Texture Loader
 const textureLoader = new THREE.TextureLoader();
-const fontTextureText = textureLoader.load("textures/matcaps/2.png");
-const fontTextureTorus = textureLoader.load("textures/matcaps/4.png");
+const fontTextureText = textureLoader.load("public/textures/matcaps/2.png");
+const fontTextureTorus = textureLoader.load("public/textures/matcaps/4.png");
 fontTextureText.colorSpace = THREE.SRGBColorSpace;
 fontTextureTorus.colorSpace = THREE.SRGBColorSpace;
 
@@ -23,7 +23,7 @@ const materialTorus = new THREE.MeshMatcapMaterial({
 
 // Font Loader
 const fontLoader = new FontLoader();
-fontLoader.load("./Fonts/helvetiker_regular.typeface.json", (font) => {
+fontLoader.load("./public/Fonts/helvetiker_regular.typeface.json", (font) => {
   const textGeometry = new TextGeometry("Three js in progress...", {
     font: font,
     size: 0.5,

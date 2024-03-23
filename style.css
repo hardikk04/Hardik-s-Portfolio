@@ -25,22 +25,22 @@ body::-webkit-scrollbar-track {
 
 @font-face {
   font-family: regular;
-  src: url(./Fonts/Gilroy-Regular.woff2);
+  src: url(./public/Fonts/Gilroy-Regular.woff2);
 }
 
 @font-face {
   font-family: bold;
-  src: url(./Fonts/Gilroy-Bold.woff2);
+  src: url(./public/Fonts/Gilroy-Bold.woff2);
 }
 
 @font-face {
   font-family: black;
-  src: url(./Fonts/Gilroy-Black.woff2);
+  src: url(./public/Fonts/Gilroy-Black.woff2);
 }
 
 @font-face {
   font-family: akira;
-  src: url(./Fonts/Akira\ Expanded\ Demo.otf);
+  src: url(./public/Fonts/Akira\ Expanded\ Demo.otf);
 }
 
 .main {
@@ -579,6 +579,13 @@ footer > p {
 footer > p > i {
   color: #92a4b1;
   font-size: 1.3vw;
+}
+
+.threejs {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 @media (min-width: 1200px) {
