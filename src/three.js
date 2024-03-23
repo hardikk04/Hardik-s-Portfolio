@@ -44,11 +44,11 @@ fontLoader.load("Fonts/helvetiker_regular.typeface.json", (font) => {
 const geometry = new THREE.TorusGeometry(0.3, 0.2, 20, 45);
 
 // Creating 300 torus
-for (let i = 0; i < 300; i++) {
+for (let i = 0; i < 500; i++) {
   const mesh = new THREE.Mesh(geometry, materialTorus);
-  mesh.position.x = (Math.random() - 0.5) * 10;
-  mesh.position.y = (Math.random() - 0.5) * 10;
-  mesh.position.z = (Math.random() - 0.5) * 10;
+  mesh.position.x = (Math.random() - 0.5) * 12;
+  mesh.position.y = (Math.random() - 0.5) * 12;
+  mesh.position.z = (Math.random() - 0.5) * 15;
 
   mesh.rotation.x = Math.random() * Math.PI;
   mesh.rotation.y = Math.random() * Math.PI;
@@ -75,7 +75,7 @@ const camera = new THREE.PerspectiveCamera(
   window.innerWidth / window.innerHeight
 );
 scene.add(camera);
-camera.position.z = 3;
+camera.position.z = 6;
 
 // Canvas
 const canvas = document.querySelector(".webgl");
@@ -89,6 +89,8 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 // Orbit Controls
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 1;
 
 scene.background = new THREE.Color(0x1f1e21);
 
