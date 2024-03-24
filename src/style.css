@@ -862,7 +862,8 @@ footer > p > i {
 
   .swiper-3d .swiper-cube-shadow,
   .swiper-3d .swiper-slide {
-    width: 300px !important;
+    width: 250px !important;
+    height: 200px;
   }
 
   .swiper-slide {
@@ -899,6 +900,10 @@ footer > p > i {
   .hardik-dets > h3::after {
     right: 4vw;
     background-size: 110px 40px;
+  }
+
+  .page2 {
+    height: 70vh;
   }
 
   .page3-right p {
