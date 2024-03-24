@@ -75,7 +75,7 @@ const camera = new THREE.PerspectiveCamera(
   window.innerWidth / window.innerHeight
 );
 scene.add(camera);
-camera.position.z = 6;
+camera.position.x = 6;
 
 // Canvas
 const canvas = document.querySelector(".webgl");
@@ -85,12 +85,16 @@ const renderer = new THREE.WebGLRenderer({
   canvas,
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
 // Orbit Controls
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
 controls.autoRotate = true;
 controls.autoRotateSpeed = 1;
+
+controls.minDistance = 0;
+controls.maxDistance = 10;
 
 scene.background = new THREE.Color(0x1f1e21);
 

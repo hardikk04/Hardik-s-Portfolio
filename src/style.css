@@ -49,6 +49,20 @@ body::-webkit-scrollbar-track {
   background-color: #1f1e21;
   /* font-family: gilroy; */
   overflow-x: hidden;
+  cursor: none;
+}
+
+.mouse-follower {
+  z-index: 10;
+  --circle-size: 40px;
+  position: fixed;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border: 1px solid white;
+  border-radius: 100%;
+  top: calc(var(--circle-size) / 2 * -1);
+  left: calc(var(--circle-size) / 2 * -1);
+  pointer-events: none;
 }
 
 .loder {
