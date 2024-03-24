@@ -54,6 +54,7 @@ body::-webkit-scrollbar-track {
 
 .mouse-follower {
   z-index: 10;
+  display: none;
   --circle-size: 40px;
   position: fixed;
   height: var(--circle-size);

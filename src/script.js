@@ -385,6 +385,7 @@ if (
   function mouseFollower() {
     // Select the circle element
     const circleElement = document.querySelector(".mouse-follower");
+    circleElement.style.display = "initial";
 
     // Create objects to track mouse position and custom cursor position
     const mouse = { x: 0, y: 0 }; // Track current mouse position
@@ -454,3 +455,5 @@ if (
   }
   mouseFollower();
 }
+
+// circleElement.style.display = "initial";
