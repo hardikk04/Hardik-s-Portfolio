@@ -235,7 +235,7 @@ function gsapAnimations() {
     let Interval1 = setInterval(() => {
       experienceCount++;
       experienceH1.textContent = experienceCount;
-      if (experienceCount === 6) {
+      if (experienceCount === 1) {
         clearInterval(Interval1);
       }
     }, 100);
