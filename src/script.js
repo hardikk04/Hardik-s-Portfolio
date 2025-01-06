@@ -90,7 +90,7 @@ const t1 = gsap.timeline();
 function gsapAnimations() {
   t1.to(".loder", {
     top: "-100vh",
-    duration: 1,
+    duration: 1.5,
     ease: "power3.inOut",
   });
 
